@@ -2,11 +2,15 @@
 
 echo "Welcome to flipCoin"
 
-Coin=$(( RANDOM%2))
+for((i=0;i<=10;i++))
+do
+	Coin=$(( RANDOM%2 ))
 
 if [ $Coin -eq 0 ]
 then
-	echo "Coin is Head"
+	echo "Head"
 else
-	echo "Coin is tail"
+	echo "Tail"
 fi
+done
+
